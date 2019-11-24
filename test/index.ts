@@ -1,4 +1,4 @@
-import App from "../src/App";
+import { App } from "../src";
 
 const app = new App();
 
@@ -13,8 +13,7 @@ app.use(async _req => {
 });
 
 app.get("/", async () => {
-  throw new Error("fg")
-  return "Hiya!";
+  return "Hiyaind!";
 });
 
 app.use("/", async (_req, _res, err) => {
